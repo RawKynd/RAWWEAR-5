@@ -2,66 +2,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Raw Technique</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Raw Technique</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="tabs">
-        <button class="tablink" onclick="openTab(event, 'Home')">Home</button>
-        <button class="tablink" onclick="openTab(event, 'About')">About</button>
-        <button class="tablink" onclick="openTab(event, 'SmartGlasses')">Smart Glasses</button>
-        <button class="tablink" onclick="openTab(event, 'SmartWatches')">Smart Watches</button>
-        <button class="tablink" onclick="openTab(event, 'BlindTech')">Blind Tech</button>
-        <button class="tablink" onclick="openTab(event, 'Research')">Research</button>
-        <button class="tablink" onclick="openTab(event, 'Contact')">Contact</button>
-    </div>
+  <header>
+    <h1>Raw Technique</h1>
+    <nav>
+      <ul class="tabs">
+        <li onclick="showTab('home')">Home</li>
+        <li onclick="showTab('smartglasses')">Smartglasses</li>
+        <li onclick="showTab('health')">Health Monitoring</li>
+        <li onclick="showTab('ai')">AI & Blind Accessibility</li>
+        <li onclick="showTab('tech')">Technology & Research</li>
+        <li onclick="showTab('donations')">Donations</li>
+        <li onclick="showTab('contact')">Contact</li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="Home" class="tabcontent">
-        <h1>Welcome to Raw Technique</h1>
-        <img src="images/tech-rise.jpg" alt="Technology Rise">
-        <p>Raw Technique pioneers safe and accessible AI wearables for all.</p>
-    </div>
+  <main>
+    <section id="home" class="tab-content">Welcome to Raw Technique. Revolutionizing wearable tech...</section>
+    <section id="smartglasses" class="tab-content hidden">Smartglasses are our flagship innovation...</section>
+    <section id="health" class="tab-content hidden">Real-time health monitoring using embedded sensors...</section>
+    <section id="ai" class="tab-content hidden">Designed to assist the blind and visually impaired...</section>
+    <section id="tech" class="tab-content hidden">Advanced research into AI, microchips, and interfaces...</section>
+    <section id="donations" class="tab-content hidden">Support our mission by donating or partnering...</section>
+    <section id="contact" class="tab-content hidden">Contact Mr. Sibusiso at +27670578007 or email rawvisual02@gmail.com</section>
+  </main>
 
-    <div id="About" class="tabcontent">
-        <h1>About Us</h1>
-        <p>Founded in 2024 by Miss Lungi Sokhulu (Designer) and Mr. Sibusiso Mbili (Tech Enthusiast).</p>
-        <p>They combined efforts since 2023 to change wearable tech for the better.</p>
-        <p>30-Line Profiles elaborated in separate content (to be added)...</p>
-    </div>
-
-    <div id="SmartGlasses" class="tabcontent">
-        <h1>Smart Glasses</h1>
-        <img src="images/smart-glasses.jpg" alt="Smart Glasses">
-        <p>Smart glasses designed for accessibility, medical use, and lifestyle enhancement.</p>
-    </div>
-
-    <div id="SmartWatches" class="tabcontent">
-        <h1>Smart Watches</h1>
-        <img src="images/smartwatch.jpg" alt="Smartwatch">
-        <p>Smartwatches that monitor health and sync with daily life for productivity and safety.</p>
-    </div>
-
-    <div id="BlindTech" class="tabcontent">
-        <h1>Blind Technology</h1>
-        <img src="images/blind-tech.jpg" alt="Blind Tech">
-        <p>Dedicated wearable AI for visually impaired users, usable by everyone.</p>
-    </div>
-
-    <div id="Research" class="tabcontent">
-        <h1>Research & Innovation</h1>
-        <img src="images/research-graph.jpg" alt="Market Research">
-        <p>20 lines of analysis about global wearable trends and accessibility gaps.</p>
-        <p>50 lines on AI smart glasses technology and market acceptance (to be expanded)...</p>
-    </div>
-
-    <div id="Contact" class="tabcontent">
-        <h1>Contact Us</h1>
-        <p>Call: +27 67 057 8007</p>
-        <p>Email: rawvisual02@gmail.com</p>
-        <p>We accept donations, sponsorships, and collaborations!</p>
-    </div>
-
-    <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
